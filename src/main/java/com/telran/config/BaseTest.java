@@ -24,13 +24,12 @@ public class BaseTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "MyNex");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "GK");
         capabilities.setCapability( MobileCapabilityType.PLATFORM_VERSION, "8.0");
         capabilities.setCapability("appPackage", "com.example.svetlana.scheduler");
         capabilities.setCapability("appActivity", ".presentation.splashScreen.SplashScreenActivity");
         capabilities.setCapability("automationName", "Appium");
-        capabilities.setCapability("app","/Users/tayahatum/QAAppium/apk/v.0.0.3.apk");
-
+        capabilities.setCapability("app","/Users/GLEB/Testing/apk/v.0.0.3.apk");
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
